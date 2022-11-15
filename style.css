@@ -1,0 +1,211 @@
+h1, h2 {
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 26px;
+  line-height: 38px;
+}
+
+h2 {
+  font-size: 22px;
+  line-height: 33px;
+  margin-bottom: 0;
+}
+
+h3 {
+  color: #0079FF;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+h4 {
+  color: #697C9A;
+  font-size: 13px;
+  line-height: 20px;
+  margin-bottom: 0;
+}
+
+body {
+  background-color: #141D2F;
+  font-family: "Space Mono", sans-serif;
+  line-height: 25px;
+  font-size: 15px;
+  color: #F6F8FF;
+}
+
+p{
+  margin-bottom: 0;
+}
+
+
+
+
+/* Groundlaying Design */
+
+#heading{
+  margin-bottom: 3%;
+}
+
+@media (max-width: 576px) {
+  #heading{
+    margin-top: 2%;
+    margin-bottom: 8%;
+  }
+}
+
+#content {
+  margin: 1% 30% 12%;
+}
+
+@media (max-width: 576px) {
+  #content {
+    margin: 5% 5% 13%;
+  }
+}
+
+.container{
+  background-color: #1E2A47;
+  padding: 2% 2%;
+  margin-bottom: 5%;
+}
+
+
+
+/* User Search Design */
+
+.card-search{
+  border-radius: 10px;
+}
+
+.icon{
+  height: 80%;
+  text-align: center;
+}
+
+
+.btn-primary{
+  display: inline-block;
+  float: right;
+  background-color: #0079FF;
+  border-radius: 5px;
+}
+
+.input-group>:not(:first-child):not(.dropdown-menu):not(.valid-tooltip):not(.valid-feedback):not(.invalid-tooltip):not(.invalid-feedback){
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+
+.input-group, .form-control, .input-group-text{
+  background-color: inherit;
+  border: none;
+}
+
+.form-control{
+  color: inherit;
+}
+
+.form-control:focus {
+  box-shadow: none !important;
+  background-color: inherit;
+  color: inherit;
+}
+
+
+.mb-3{
+  margin-bottom: 0px;
+}
+
+
+
+
+/* User Display Design */
+
+.card-user{
+  border-radius: 10px;
+  padding: 5%;
+}
+
+.user-image{
+  width: 6rem;
+  border-radius: 100%;
+}
+
+@media (max-width: 991.98px) {
+  .user-image{
+    width: 5rem;
+  }
+}
+
+
+#name{
+  margin-bottom: 0;
+}
+#username{
+  margin-bottom: 0;
+}
+.joined-date{
+  margin-top: 5px;
+  text-align: right;
+}
+
+@media (max-width: 991.98px) {
+  .joined-date{
+    margin-top: 0;
+    text-align: left;
+  }
+}
+
+.description{
+  margin-top: -20px;
+}
+
+@media (max-width: 991.98px) {
+  .description{
+    margin: 30px 0;
+  }
+}
+
+.stats{
+  background-color: #141D2F;
+  border-radius: 10px;
+  margin: 5% 0 5% 0;
+  padding: 3% 4%;
+}
+
+.data{
+  margin: 3% 0 0 0;
+}
+
+.icon-small{
+  width: 15px;
+  filter: brightness(0) saturate(100%) invert(100%) sepia(25%) saturate(4635%) hue-rotate(180deg) brightness(107%) contrast(102%);
+}
+
+.data-point{
+  margin-top: 2%;
+}
+
+.not-available{
+  opacity: 0.5;
+}
+
+
+
+
+
+
+/* Footer */
+
+
+
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}

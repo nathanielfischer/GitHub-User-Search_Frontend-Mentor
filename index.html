@@ -1,28 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
-  
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap" rel="stylesheet">
+  <script src="https://use.fontawesome.com/releases/v6.2.0/js/all.js" data-auto-replace-svg="nest"></script>
+  <link rel="stylesheet" href="style.css">
+
   <title>Frontend Mentor | GitHub user search app</title>
 </head>
+
 <body>
+  <div id="content">
+    <h1 id="heading">devfinder</h1>
 
-  devfinder
+    <!-- Search Card -->
 
-  Light
-  Dark
+    <div class="container card-search">
+      <div class="input-group">
+        <span class="input-group-text" id="basic-addon1"><img src="assets/icon-search.svg" alt="Search Icon" class="icon"></span>
+        <input type="text" class="form-control" placeholder="Search GitHub username..." aria-label="Search GitHub username" aria-describedby="button-addon2">
+        <button class="btn btn-primary" type="button" id="button-addon2">Search</button>
+      </div>
+    </div>
 
-  Search GitHub username...
-  Search
 
-  Joined
+    <!-- Settings Card -->
+    <div class="container card-user">
 
-  Repos
-  Followers
-  Following
+      <!-- Image, title, username, joined -->
+      <div class="row">
+        <div class="col-lg-2 col-4">
+          <img src="https://avatars.githubusercontent.com/u/583231?v=4" alt="Avatar" class="user-image">
+        </div>
+        <div class="col-lg-10 col-8">
+          <div class="row">
+            <div class="col-lg-6">
+              <h1 id="name">The Ocotcat</h1>
+              <h3 id="username">@octocat</h3>
+            </div>
+            <div class="col-lg-6">
+              <p class="joined-date">Joined 25 Jan 2011</p>
+            </div>
+          </div>
+        </div>
 
+
+        <div class="col-lg-2">
+          <!-- Desktop rechts verschoben, mobile untereinander -->
+        </div>
+        <div class="col-lg-10">
+          <p class="description">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros.</p>
+
+          <!-- Stats -->
+          <div class="row stats">
+            <div class="col-4">
+              <h4>Repos</h4>
+              <h2>8</h2>
+            </div>
+            <div class="col-4">
+              <h4>Followers</h4>
+              <h2>3938</h2>
+            </div>
+            <div class="col-4">
+              <h4>Following</h4>
+              <h2>9</h2>
+            </div>
+          </div>
+
+
+          <!-- Data with icons -->
+          <div class="row data">
+            <div class="col-md-6 data-point">
+              <img src="assets/icon-location.svg" alt="Location Icon" class="icon-small">
+              <a>San Francsco</a>
+            </div>
+            <div class="col-md-6 data-point not-available">
+              <img src="assets/icon-twitter.svg" alt="Twitter Icon" class="icon-small">
+              <a>Not available</a>
+            </div>
+            <div class="col-md-6 data-point">
+              <img src="assets/icon-website.svg" alt="Website Icon" class="icon-small">
+              <a>https://github.blog</a>
+            </div>
+            <div class="col-md-6 data-point">
+              <img src="assets/icon-company.svg" alt="Company Icon" class="icon-small">
+              <a>@github</a>
+            </div>
+          </div>
+
+
+
+
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="https://github.com/nathanielfischer" target="_blank">Nathaniel</a>.
+  </div>
+
+
+  <script type="module">
+    import {
+      Octokit
+    } from "https://cdn.skypack.dev/@octokit/rest";
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <script src="index.js" charset="utf-8"></script>
 </body>
+
 </html>

@@ -45,6 +45,7 @@ p{
 
 #heading{
   margin-bottom: 3%;
+  display: inline-block;
 }
 
 @media (max-width: 576px) {
@@ -55,7 +56,7 @@ p{
 }
 
 #content {
-  margin: 1% 27% 12%;
+  margin: 2% 27% 12%;
 }
 
 @media (min-width: 576px) and (max-width: 1199.98px) {
@@ -70,10 +71,18 @@ p{
   }
 }
 
-.container{
-  background-color: #1E2A47;
-  padding: 2% 2%;
-  margin-bottom: 5%;
+/* .container .heading{
+  padding-left: 0;
+  padding-right: 0;
+} */
+
+
+
+
+
+.toggle{
+  float:right;
+  margin: 2px 0 0 0;
 }
 
 
@@ -82,8 +91,11 @@ p{
 
 /* User Search Design */
 
-.card-search{
+.card-search, .card-user{
   border-radius: 10px;
+  background-color: #1E2A47;
+  padding: 2% 2%;
+  margin-bottom: 5%;
 }
 
 .icon{
@@ -144,7 +156,6 @@ p{
 /* User Display Design */
 
 .card-user{
-  border-radius: 10px;
   padding: 5%;
 }
 

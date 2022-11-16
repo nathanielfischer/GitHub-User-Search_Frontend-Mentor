@@ -134,4 +134,8 @@ function toggleMode(){
   $(".container").toggleClass("container-light");
   $(".joined-date").toggleClass("joined-date-light");
   $(".icon-small").toggleClass("icon-small-light");
+
+  $(".input-group").toggleClass("form-control-light");
+  $(".form-control").toggleClass("form-control-light");
+  $(".input-group-text").toggleClass("form-control-light");
 }

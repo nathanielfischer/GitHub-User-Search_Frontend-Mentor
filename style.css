@@ -116,7 +116,7 @@ p {
 }
 
 .input-group, .form-control, .input-group-text {
-  background-color: inherit;
+  background-color: #1E2A47;
   border: none;
 }
 
@@ -272,6 +272,10 @@ a:-webkit-any-link:hover {
 
 .joined-date-light {
   color: #697C9A;
+}
+
+.form-control-light{
+  background-color: #FEFEFE;
 }
 
 .icon-small-light {

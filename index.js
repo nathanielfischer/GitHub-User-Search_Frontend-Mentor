@@ -3,17 +3,25 @@ var request = new XMLHttpRequest();
 
 
 
-// "Event Listener"
+// "Event Listener" start
 
 $("#button-addon2").click(function() {
   checkUsername();
 });
+
+$(".toggle").click(function() {
+  toggleMode();
+});
+
 
 $('.form-control').keypress(function (e) {
   if (e.which == 13) {
     checkUsername();
   }
 });
+
+
+// "Event Listener" end
 
 
 
@@ -108,4 +116,22 @@ function updateWebsite(json) {
     $(".data-point a").eq(3).text(json.company);
   }
 
+}
+
+
+
+// toggle light / dark mode
+function toggleMode(){
+  //change toggle text and icon
+  $(".toggle-dark").toggle();
+  $(".toggle-light").toggle();
+
+
+  $("h1").toggleClass("h-light");
+  $("h2").toggleClass("h-light");
+  $("body").toggleClass("background-light");
+  $(".stats").toggleClass("background-light");
+  $(".container").toggleClass("container-light");
+  $(".joined-date").toggleClass("joined-date-light");
+  $(".icon-small").toggleClass("icon-small-light");
 }

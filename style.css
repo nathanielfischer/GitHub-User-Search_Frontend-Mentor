@@ -120,6 +120,10 @@ p {
   border: none;
 }
 
+input[type="search"] {
+  -webkit-appearance: none;
+}
+
 .form-control {
   color: inherit;
 }

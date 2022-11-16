@@ -44,6 +44,7 @@ function callAPI(username) {
       updateWebsite(data);
     } else {
       console.log("error");
+      $(".error").show();
     }
   }
 }
@@ -53,6 +54,8 @@ function callAPI(username) {
 // Data to HTML
 
 function updateWebsite(json) {
+  $(".error").hide(); // hide error message
+
   $(".user-image").attr("src", json.avatar_url);
   $("#name").text(json.name);
   $("#username").text("@" + json.login);

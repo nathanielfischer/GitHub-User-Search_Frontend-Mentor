@@ -126,6 +126,19 @@ p{
 }
 
 
+.error{
+  color: red;
+  text-decoration: none;
+  margin: auto 2% auto 0;
+  display: none;
+}
+
+.error:hover{
+  color: red;
+  text-decoration: none;
+}
+
+
 
 
 /* User Display Design */
@@ -225,6 +238,7 @@ a:-webkit-any-link {
 a:-webkit-any-link:hover {
   text-decoration: underline;
 }
+
 
 
 

@@ -3,18 +3,28 @@ var request = new XMLHttpRequest();
 
 
 
-// Button "Event Listener"
+// "Event Listener"
 
 $("#button-addon2").click(function() {
-  var username = $(".form-control")[0].value;
+  checkUsername();
+});
 
+$('.form-control').keypress(function (e) {
+  if (e.which == 13) {
+    checkUsername();
+  }
+});
+
+
+
+
+function checkUsername() {
+  var username = $(".form-control")[0].value;
   if (username === "") {
     username = "octocat";
   }
-
   callAPI(username);
-});
-
+}
 
 
 // API GET request
@@ -43,13 +53,12 @@ function callAPI(username) {
 // Data to HTML
 
 function updateWebsite(json) {
-  console.log(json);
   $(".user-image").attr("src", json.avatar_url);
   $("#name").text(json.name);
   $("#username").text("@" + json.login);
   const date = new Date(json.created_at);
   $(".joined-date").text("Joined " + date.toUTCString().substring(5, 17));
-  $(".description").text(json.bio); // what to do if empty?
+  $(".description").text(json.bio);
 
   //stats
   $(".stats h2").eq(0).text(json.public_repos);
@@ -78,12 +87,16 @@ function updateWebsite(json) {
   if (json.blog === "") {
     $(".data-point").eq(2).addClass("not-available");
     $(".data-point a").eq(2).text("not available");
+    $(".data-point a").eq(2).removeAttr("href");
   } else {
     $(".data-point").eq(2).removeClass("not-available");
-    $(".data-point a").eq(2).text(json.blog);
+    var blogURL = json.blog;
+    $(".data-point a").eq(2).text(blogURL.substring(8, blogURL.length));
+    $(".data-point a").eq(2).removeAttr("href");
+    $(".data-point a").eq(2).attr("href", json.blog);
   }
 
-  //blog
+  //company
   if (json.company === null) {
     $(".data-point").eq(3).addClass("not-available");
     $(".data-point a").eq(3).text("not available");

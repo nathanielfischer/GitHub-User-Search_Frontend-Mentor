@@ -58,7 +58,13 @@ p{
   margin: 1% 27% 12%;
 }
 
-@media (max-width: 576px) {
+@media (min-width: 576px) and (max-width: 1199.98px) {
+  #content {
+    margin: 5% 10% 13%;
+  }
+}
+
+@media (max-width: 575.98px) {
   #content {
     margin: 5% 5% 13%;
   }
@@ -69,6 +75,8 @@ p{
   padding: 2% 2%;
   margin-bottom: 5%;
 }
+
+
 
 
 
@@ -127,9 +135,27 @@ p{
   padding: 5%;
 }
 
+@media (min-width: 576px) and (max-width: 1199.98px) {
+  .card-user{
+    padding: 7% 5%;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .card-user{
+    padding: 12% 5%;
+  }
+}
+
 .user-image{
   width: 100%;
   border-radius: 100%;
+}
+
+@media (min-width: 576px) and (max-width: 991.98px) {
+  .user-image{
+    width: 90%;
+  }
 }
 
 /* @media (max-width: 991.98px) {
@@ -191,6 +217,14 @@ p{
   opacity: 0.5;
 }
 
+a:-webkit-any-link {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:-webkit-any-link:hover {
+  text-decoration: underline;
+}
 
 
 

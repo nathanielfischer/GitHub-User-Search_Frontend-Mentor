@@ -46,7 +46,7 @@ Users should be able to:
 
 ### What I learned
 
-I learned how to get Data from an API via XMLHttpRequest from the client side and overall more experience working with jQuery. 
+I learned how to get Data from an API via XMLHttpRequest from the client side and I've got overall more experience working with jQuery. 
 
 Furthermore I learned how to make a pull request in git and how to merge pull requests on github.
 

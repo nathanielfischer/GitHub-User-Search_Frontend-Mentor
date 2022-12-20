@@ -19,10 +19,12 @@ This is a solution to the [GitHub user search app challenge on Frontend Mentor](
 
 Users should be able to:
 
-- View the optimal layout for each page depending on their device's screen size
+- View the optimal layout for the app depending on their device's screen size
 - See hover states for all interactive elements on the page
-- See their own IP address on the map on the initial page load
-- Search for any IP addresses or domains and see the key information and location
+- Search for GitHub users by their username
+- See relevant user information based on their search
+- Switch between light and dark themes
+- **Bonus**: Have the correct color scheme chosen for them based on their computer preferences. _Hint_: Research `prefers-color-scheme` in CSS.
 
 ### Screenshot
 

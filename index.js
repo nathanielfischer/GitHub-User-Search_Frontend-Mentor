@@ -69,7 +69,8 @@ function updateWebsite(json) {
   $("#username").text("@" + json.login);
   const date = new Date(json.created_at);
   $(".joined-date").text("Joined " + date.toUTCString().substring(5, 17));
-  $(".description").text(json.bio);
+  $(".description-mobile").text(json.bio);
+  $(".description-desktop").text(json.bio);
 
   //stats
   $(".stats h2").eq(0).text(json.public_repos);
